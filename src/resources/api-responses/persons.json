@@ -1,0 +1,20 @@
+{
+  "result": [
+    {
+      "id": 1,
+      "firstName": "Aleksi",
+      "lastName": "Kar"
+    },
+    {
+      "id": 2,
+      "firstName": "Aleksi",
+      "lastName": "Kar"
+    },
+    {
+      "id": 3,
+      "firstName": "Aleksi",
+      "lastName": "Kar"
+    }
+  ],
+  "error": ""
+}

@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "name": "King of None",
+    "members": [
+      {
+        "id": 5,
+        "firstName": "Aleksi",
+        "lastName": "Kar"
+      },
+      {
+        "id": 4,
+        "firstName": "Juha",
+        "lastName": "Paa"
+      },
+      {
+        "id": 6,
+        "firstName": "Miiro",
+        "lastName": "Kar"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "King of None",
+    "members": []
+  },
+  {
+    "id": 3,
+    "name": "King of None",
+    "members": []
+  }
+]
