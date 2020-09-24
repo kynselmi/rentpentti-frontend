@@ -1,6 +1,7 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
 import ApiDataPopulatedTableRow from '../components/ApiDataPopulatedTableRow'
+import queryPersons from '../queries/PersonQuery.js'
 
 export default class ApiDataPopulatedTable extends React.Component {  
   constructor(props) {
@@ -13,16 +14,13 @@ export default class ApiDataPopulatedTable extends React.Component {
   }
 
   componentDidMount() {
-    const API_URL = "http://localhost:8080"
-    const URL_MAPPING = this.props.urlMapping;
-    fetch(API_URL+URL_MAPPING)
-    .then(res => res.json())
-    .then(data => {
-      this.setState({
-        items: data,
-        isLoaded: true
-      })
-    });
+    queryPersons().then( data =>
+        this.setState({
+          isLoaded: true,
+          items: data
+        })
+      )
+    
   }
 
   render() {

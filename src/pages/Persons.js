@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
+import { useParams } from 'react-router-dom';
 import ApiDataPopulatedTable from '../components/ApiDataPopulatedTable';
 import Header from '../components/Header'
 
@@ -58,10 +59,19 @@ export default class Persons extends React.Component {
   }
 
   render() {
+    let id = undefined
+    if(id !== undefined) {
+      return (
+        <div className="app-wrapper">
+          <Header activeKey="persons" />
+          <h1>Moi</h1>
+        </div>
+      )
+    }
     const handleShow = () => this.toggleShow();
       return (
         <div className="app-wrapper">
-          <Header activerKey="persons" />
+          <Header activeKey="persons" />
           <div className="table-wrapper">
             <ApiDataPopulatedTable className="data-table" urlMapping="/person" headerNames={HEADER_NAMES} />
           </div>
@@ -79,5 +89,4 @@ export default class Persons extends React.Component {
         </div>
       );
   }
-
 }

@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import BandCard from '../components/BandCard'
 
 const API_URL = "http://localhost:8080";
-const HEADER_NAMES = [ "Id", "Name" ]
+const HEADER_NAMES = [ "Id", "Name", "Members" ]
 
 export default class Bands extends React.Component {  
   constructor(props) {
